@@ -1,0 +1,2913 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 15
+Server version: 8.0.30 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select verion();
+ERROR 1046 (3D000): No database selected
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| dac1               |
+| dac10              |
+| dac100             |
+| dac101             |
+| dac102             |
+| dac103             |
+| dac104             |
+| dac105             |
+| dac106             |
+| dac107             |
+| dac108             |
+| dac109             |
+| dac11              |
+| dac110             |
+| dac111             |
+| dac112             |
+| dac113             |
+| dac114             |
+| dac115             |
+| dac116             |
+| dac117             |
+| dac118             |
+| dac119             |
+| dac12              |
+| dac120             |
+| dac13              |
+| dac14              |
+| dac15              |
+| dac16              |
+| dac17              |
+| dac18              |
+| dac19              |
+| dac2               |
+| dac20              |
+| dac21              |
+| dac22              |
+| dac23              |
+| dac24              |
+| dac25              |
+| dac26              |
+| dac27              |
+| dac28              |
+| dac29              |
+| dac3               |
+| dac30              |
+| dac31              |
+| dac32              |
+| dac33              |
+| dac34              |
+| dac35              |
+| dac36              |
+| dac37              |
+| dac38              |
+| dac39              |
+| dac4               |
+| dac40              |
+| dac41              |
+| dac42              |
+| dac43              |
+| dac44              |
+| dac45              |
+| dac46              |
+| dac47              |
+| dac48              |
+| dac49              |
+| dac5               |
+| dac50              |
+| dac51              |
+| dac52              |
+| dac53              |
+| dac54              |
+| dac55              |
+| dac56              |
+| dac57              |
+| dac58              |
+| dac59              |
+| dac6               |
+| dac60              |
+| dac61              |
+| dac62              |
+| dac63              |
+| dac64              |
+| dac65              |
+| dac66              |
+| dac67              |
+| dac68              |
+| dac69              |
+| dac7               |
+| dac70              |
+| dac71              |
+| dac72              |
+| dac73              |
+| dac74              |
+| dac75              |
+| dac76              |
+| dac77              |
+| dac78              |
+| dac79              |
+| dac8               |
+| dac80              |
+| dac81              |
+| dac82              |
+| dac83              |
+| dac84              |
+| dac85              |
+| dac86              |
+| dac87              |
+| dac88              |
+| dac89              |
+| dac9               |
+| dac90              |
+| dac91              |
+| dac92              |
+| dac93              |
+| dac94              |
+| dac95              |
+| dac96              |
+| dac97              |
+| dac98              |
+| dac99              |
+| db1                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+127 rows in set (0.03 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| dac1               |
+| dac10              |
+| dac100             |
+| dac101             |
+| dac102             |
+| dac103             |
+| dac104             |
+| dac105             |
+| dac106             |
+| dac107             |
+| dac108             |
+| dac109             |
+| dac11              |
+| dac110             |
+| dac111             |
+| dac112             |
+| dac113             |
+| dac114             |
+| dac115             |
+| dac116             |
+| dac117             |
+| dac118             |
+| dac119             |
+| dac12              |
+| dac120             |
+| dac13              |
+| dac14              |
+| dac15              |
+| dac16              |
+| dac17              |
+| dac18              |
+| dac19              |
+| dac2               |
+| dac20              |
+| dac21              |
+| dac22              |
+| dac23              |
+| dac24              |
+| dac25              |
+| dac26              |
+| dac27              |
+| dac28              |
+| dac29              |
+| dac3               |
+| dac30              |
+| dac31              |
+| dac32              |
+| dac33              |
+| dac34              |
+| dac35              |
+| dac36              |
+| dac37              |
+| dac38              |
+| dac39              |
+| dac4               |
+| dac40              |
+| dac41              |
+| dac42              |
+| dac43              |
+| dac44              |
+| dac45              |
+| dac46              |
+| dac47              |
+| dac48              |
+| dac49              |
+| dac5               |
+| dac50              |
+| dac51              |
+| dac52              |
+| dac53              |
+| dac54              |
+| dac55              |
+| dac56              |
+| dac57              |
+| dac58              |
+| dac59              |
+| dac6               |
+| dac60              |
+| dac61              |
+| dac62              |
+| dac63              |
+| dac64              |
+| dac65              |
+| dac66              |
+| dac67              |
+| dac68              |
+| dac69              |
+| dac7               |
+| dac70              |
+| dac71              |
+| dac72              |
+| dac73              |
+| dac74              |
+| dac75              |
+| dac76              |
+| dac77              |
+| dac78              |
+| dac79              |
+| dac8               |
+| dac80              |
+| dac81              |
+| dac82              |
+| dac83              |
+| dac84              |
+| dac85              |
+| dac86              |
+| dac87              |
+| dac88              |
+| dac89              |
+| dac9               |
+| dac90              |
+| dac91              |
+| dac92              |
+| dac93              |
+| dac94              |
+| dac95              |
+| dac96              |
+| dac97              |
+| dac98              |
+| dac99              |
+| db1                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+127 rows in set (0.00 sec)
+
+mysql> select database();
++------------+
+| database() |
++------------+
+| NULL       |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select verion();
+ERROR 1046 (3D000): No database selected
+mysql> create database db2;
+Query OK, 1 row affected (0.08 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| dac1               |
+| dac10              |
+| dac100             |
+| dac101             |
+| dac102             |
+| dac103             |
+| dac104             |
+| dac105             |
+| dac106             |
+| dac107             |
+| dac108             |
+| dac109             |
+| dac11              |
+| dac110             |
+| dac111             |
+| dac112             |
+| dac113             |
+| dac114             |
+| dac115             |
+| dac116             |
+| dac117             |
+| dac118             |
+| dac119             |
+| dac12              |
+| dac120             |
+| dac13              |
+| dac14              |
+| dac15              |
+| dac16              |
+| dac17              |
+| dac18              |
+| dac19              |
+| dac2               |
+| dac20              |
+| dac21              |
+| dac22              |
+| dac23              |
+| dac24              |
+| dac25              |
+| dac26              |
+| dac27              |
+| dac28              |
+| dac29              |
+| dac3               |
+| dac30              |
+| dac31              |
+| dac32              |
+| dac33              |
+| dac34              |
+| dac35              |
+| dac36              |
+| dac37              |
+| dac38              |
+| dac39              |
+| dac4               |
+| dac40              |
+| dac41              |
+| dac42              |
+| dac43              |
+| dac44              |
+| dac45              |
+| dac46              |
+| dac47              |
+| dac48              |
+| dac49              |
+| dac5               |
+| dac50              |
+| dac51              |
+| dac52              |
+| dac53              |
+| dac54              |
+| dac55              |
+| dac56              |
+| dac57              |
+| dac58              |
+| dac59              |
+| dac6               |
+| dac60              |
+| dac61              |
+| dac62              |
+| dac63              |
+| dac64              |
+| dac65              |
+| dac66              |
+| dac67              |
+| dac68              |
+| dac69              |
+| dac7               |
+| dac70              |
+| dac71              |
+| dac72              |
+| dac73              |
+| dac74              |
+| dac75              |
+| dac76              |
+| dac77              |
+| dac78              |
+| dac79              |
+| dac8               |
+| dac80              |
+| dac81              |
+| dac82              |
+| dac83              |
+| dac84              |
+| dac85              |
+| dac86              |
+| dac87              |
+| dac88              |
+| dac89              |
+| dac9               |
+| dac90              |
+| dac91              |
+| dac92              |
+| dac93              |
+| dac94              |
+| dac95              |
+| dac96              |
+| dac97              |
+| dac98              |
+| dac99              |
+| db1                |
+| db2                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+128 rows in set (0.00 sec)
+
+mysql> drop database db2;
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| dac1               |
+| dac10              |
+| dac100             |
+| dac101             |
+| dac102             |
+| dac103             |
+| dac104             |
+| dac105             |
+| dac106             |
+| dac107             |
+| dac108             |
+| dac109             |
+| dac11              |
+| dac110             |
+| dac111             |
+| dac112             |
+| dac113             |
+| dac114             |
+| dac115             |
+| dac116             |
+| dac117             |
+| dac118             |
+| dac119             |
+| dac12              |
+| dac120             |
+| dac13              |
+| dac14              |
+| dac15              |
+| dac16              |
+| dac17              |
+| dac18              |
+| dac19              |
+| dac2               |
+| dac20              |
+| dac21              |
+| dac22              |
+| dac23              |
+| dac24              |
+| dac25              |
+| dac26              |
+| dac27              |
+| dac28              |
+| dac29              |
+| dac3               |
+| dac30              |
+| dac31              |
+| dac32              |
+| dac33              |
+| dac34              |
+| dac35              |
+| dac36              |
+| dac37              |
+| dac38              |
+| dac39              |
+| dac4               |
+| dac40              |
+| dac41              |
+| dac42              |
+| dac43              |
+| dac44              |
+| dac45              |
+| dac46              |
+| dac47              |
+| dac48              |
+| dac49              |
+| dac5               |
+| dac50              |
+| dac51              |
+| dac52              |
+| dac53              |
+| dac54              |
+| dac55              |
+| dac56              |
+| dac57              |
+| dac58              |
+| dac59              |
+| dac6               |
+| dac60              |
+| dac61              |
+| dac62              |
+| dac63              |
+| dac64              |
+| dac65              |
+| dac66              |
+| dac67              |
+| dac68              |
+| dac69              |
+| dac7               |
+| dac70              |
+| dac71              |
+| dac72              |
+| dac73              |
+| dac74              |
+| dac75              |
+| dac76              |
+| dac77              |
+| dac78              |
+| dac79              |
+| dac8               |
+| dac80              |
+| dac81              |
+| dac82              |
+| dac83              |
+| dac84              |
+| dac85              |
+| dac86              |
+| dac87              |
+| dac88              |
+| dac89              |
+| dac9               |
+| dac90              |
+| dac91              |
+| dac92              |
+| dac93              |
+| dac94              |
+| dac95              |
+| dac96              |
+| dac97              |
+| dac98              |
+| dac99              |
+| db1                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+127 rows in set (0.00 sec)
+
+mysql> create database db2;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select database();
++------------+
+| database() |
++------------+
+| NULL       |
++------------+
+1 row in set (0.00 sec)
+
+mysql> use db2;
+Database changed
+mysql> select database();
++------------+
+| database() |
++------------+
+| db2        |
++------------+
+1 row in set (0.00 sec)
+
+mysql> use db1;
+Database changed
+mysql> select database();
++------------+
+| database() |
++------------+
+| db1        |
++------------+
+1 row in set (0.00 sec)
+
+mysql> use db2;
+Database changed
+mysql> create table login (userID int, userName varchar(10));
+Query OK, 0 rows affected (0.69 sec)
+
+mysql> create table login1 (userID int(4), userName varchar(10));
+Query OK, 0 rows affected, 1 warning (0.07 sec)
+
+mysql> describe login;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| userID   | int         | YES  |     | NULL    |       |
+| userName | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.02 sec)
+
+mysql> desc login1;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| userID   | int         | YES  |     | NULL    |       |
+| userName | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> drop table login;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> drop table login1;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc login;
+ERROR 1146 (42S02): Table 'db2.login' doesn't exist
+mysql>
+mysql>
+mysql>
+mysql> create table emp(empno int, ename varchar(10) not null, city varchar(10) default 'Pune');
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> desc emp;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| empno | int         | YES  |     | NULL    |       |
+| ename | varchar(10) | NO   |     | NULL    |       |
+| city  | varchar(10) | YES  |     | Pune    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into emp values(1,'saleel');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql>
+mysql> insert into emp values(1,'saleel', 100, 200);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into emp values(1,'saleel', 100, 200);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into emp values(1,'saleel',);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+mysql>
+mysql>
+mysql>
+mysql> insert into emp values(1,'saleel','baroda');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select * from emp;
++-------+--------+--------+
+| empno | ename  | city   |
++-------+--------+--------+
+|     1 | saleel | baroda |
++-------+--------+--------+
+1 row in set (0.00 sec)
+
+mysql> insert into emp values(2,'abc', default);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from emp;
++-------+--------+--------+
+| empno | ename  | city   |
++-------+--------+--------+
+|     1 | saleel | baroda |
+|     2 | abc    | Pune   |
++-------+--------+--------+
+2 rows in set (0.00 sec)
+
+mysql> insert into emp values(3, null, null);
+ERROR 1048 (23000): Column 'ename' cannot be null
+mysql> insert into emp values(3, 'a', null);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from emp;
++-------+--------+--------+
+| empno | ename  | city   |
++-------+--------+--------+
+|     1 | saleel | baroda |
+|     2 | abc    | Pune   |
+|     3 | a      | NULL   |
++-------+--------+--------+
+3 rows in set (0.00 sec)
+
+mysql> insert into emp(ename, empno) values('b', 4);
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select * from emp;
++-------+--------+--------+
+| empno | ename  | city   |
++-------+--------+--------+
+|     1 | saleel | baroda |
+|     2 | abc    | Pune   |
+|     3 | a      | NULL   |
+|     4 | b      | Pune   |
++-------+--------+--------+
+4 rows in set (0.00 sec)
+
+mysql> desc emp;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| empno | int         | YES  |     | NULL    |       |
+| ename | varchar(10) | NO   |     | NULL    |       |
+| city  | varchar(10) | YES  |     | Pune    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from emp;
++-------+--------+--------+
+| empno | ename  | city   |
++-------+--------+--------+
+|     1 | saleel | baroda |
+|     2 | abc    | Pune   |
+|     3 | a      | NULL   |
+|     4 | b      | Pune   |
++-------+--------+--------+
+4 rows in set (0.00 sec)
+
+mysql> create table a(c1 int, c2 int, c3 int default (c1+c2));
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> desc a;
++-------+------+------+-----+---------------+-------------------+
+| Field | Type | Null | Key | Default       | Extra             |
++-------+------+------+-----+---------------+-------------------+
+| c1    | int  | YES  |     | NULL          |                   |
+| c2    | int  | YES  |     | NULL          |                   |
+| c3    | int  | YES  |     | (`c1` + `c2`) | DEFAULT_GENERATED |
++-------+------+------+-----+---------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into a(c1, c2) values(4,5);
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select * from a;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    4 |    5 |    9 |
++------+------+------+
+1 row in set (0.00 sec)
+
+mysql> create table b(c1 int, c2 varchar(10), c2 int);
+ERROR 1060 (42S21): Duplicate column name 'c2'
+mysql> create table b(c1 int, c2 varchar(10), c3 datetime);
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> desc b;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| c1    | int         | YES  |     | NULL    |       |
+| c2    | varchar(10) | YES  |     | NULL    |       |
+| c3    | datetime    | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select now();
++---------------------+
+| now()               |
++---------------------+
+| 2022-10-18 04:19:49 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> insert into b values(1,'oracleCR', now());
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from b;
++------+----------+---------------------+
+| c1   | c2       | c3                  |
++------+----------+---------------------+
+|    1 | oracleCR | 2022-10-18 04:22:11 |
++------+----------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> drop table b;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create table b(c1 int, c2 varchar(10), c3 datetime default now());
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> desc b;
++-------+-------------+------+-----+-------------------+-------------------+
+| Field | Type        | Null | Key | Default           | Extra             |
++-------+-------------+------+-----+-------------------+-------------------+
+| c1    | int         | YES  |     | NULL              |                   |
+| c2    | varchar(10) | YES  |     | NULL              |                   |
+| c3    | datetime    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-------+-------------+------+-----+-------------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into b(c1, c2) values(1,'Neo4j');
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from b;
++------+-------+---------------------+
+| c1   | c2    | c3                  |
++------+-------+---------------------+
+|    1 | Neo4j | 2022-10-18 04:25:08 |
++------+-------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> desc emp;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| empno | int         | YES  |     | NULL    |       |
+| ename | varchar(10) | NO   |     | NULL    |       |
+| city  | varchar(10) | YES  |     | Pune    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc a;
++-------+------+------+-----+---------------+-------------------+
+| Field | Type | Null | Key | Default       | Extra             |
++-------+------+------+-----+---------------+-------------------+
+| c1    | int  | YES  |     | NULL          |                   |
+| c2    | int  | YES  |     | NULL          |                   |
+| c3    | int  | YES  |     | (`c1` + `c2`) | DEFAULT_GENERATED |
++-------+------+------+-----+---------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql>
+mysql> select * from a;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    4 |    5 |    9 |
++------+------+------+
+1 row in set (0.00 sec)
+
+mysql> insert into a values(5, 5*2, default);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from a;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    4 |    5 |    9 |
+|    5 |   10 |   15 |
++------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> drop table emp;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table t1 (c1 int, c2 int, c3 int default (c1+c2));
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> create table t2 (c1 int, c2 int, c3 int generated always as (c1+c2) virtual);
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> desc t1;
++-------+------+------+-----+---------------+-------------------+
+| Field | Type | Null | Key | Default       | Extra             |
++-------+------+------+-----+---------------+-------------------+
+| c1    | int  | YES  |     | NULL          |                   |
+| c2    | int  | YES  |     | NULL          |                   |
+| c3    | int  | YES  |     | (`c1` + `c2`) | DEFAULT_GENERATED |
++-------+------+------+-----+---------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> desc t2;
++-------+------+------+-----+---------+-------------------+
+| Field | Type | Null | Key | Default | Extra             |
++-------+------+------+-----+---------+-------------------+
+| c1    | int  | YES  |     | NULL    |                   |
+| c2    | int  | YES  |     | NULL    |                   |
+| c3    | int  | YES  |     | NULL    | VIRTUAL GENERATED |
++-------+------+------+-----+---------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into t1 values(5,5,20);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into t2 values(5,5,20);
+ERROR 3105 (HY000): The value specified for generated column 'c3' in table 't2' is not allowed.
+mysql> insert into t2 values(5,5,default);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into t2(c1, c2) values(6,6);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into t1(c1, c2) values(6,6);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from t1;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    5 |    5 |   20 |
+|    6 |    6 |   12 |
++------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> select * from t2;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    5 |    5 |   10 |
+|    6 |    6 |   12 |
++------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> update t1 set c1=7 where c1=6;
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update t2 set c1=7 where c1=6;
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from t1;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    5 |    5 |   20 |
+|    7 |    6 |   12 |
++------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> select * from t2;
++------+------+------+
+| c1   | c2   | c3   |
++------+------+------+
+|    5 |    5 |   10 |
+|    7 |    6 |   13 |
++------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> create table emp(id int primary key auto_increment, ename varchar(10), sal float(8,2), comm float(8,2), city varchar(10) default 'baroda', total int generated always as (sal+comm) virtual, password varbinary(10), zone enum('north', 'south', 'east', 'west'), URL varchar(20) invisible );
+Query OK, 0 rows affected, 2 warnings (0.10 sec)
+
+mysql> desc emp;
++----------+-------------------------------------+------+-----+---------+-------------------+
+| Field    | Type                                | Null | Key | Default | Extra             |
++----------+-------------------------------------+------+-----+---------+-------------------+
+| id       | int                                 | NO   | PRI | NULL    | auto_increment    |
+| ename    | varchar(10)                         | YES  |     | NULL    |                   |
+| sal      | float(8,2)                          | YES  |     | NULL    |                   |
+| comm     | float(8,2)                          | YES  |     | NULL    |                   |
+| city     | varchar(10)                         | YES  |     | baroda  |                   |
+| total    | int                                 | YES  |     | NULL    | VIRTUAL GENERATED |
+| password | varbinary(10)                       | YES  |     | NULL    |                   |
+| zone     | enum('north','south','east','west') | YES  |     | NULL    |                   |
+| URL      | varchar(20)                         | YES  |     | NULL    | INVISIBLE         |
++----------+-------------------------------------+------+-----+---------+-------------------+
+9 rows in set (0.00 sec)
+
+mysql> insert into emp values(default,'saleel', 175.25, .37,default,default,'saleel','abc','abc.com');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into emp values(default,'saleel', 175.25, .37,default,default,'saleel','north','abc.com');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql>
+mysql>
+mysql> insert into emp(id,ename,sal,comm,city, total, password, zone, url) values(default,'saleel', 175.25, .37,default,default,'saleel','north','abc.com');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from emp;
++----+--------+--------+------+--------+-------+--------------------+-------+
+| id | ename  | sal    | comm | city   | total | password           | zone  |
++----+--------+--------+------+--------+-------+--------------------+-------+
+|  1 | saleel | 175.25 | 0.37 | baroda |   176 | 0x73616C65656C     | north |
++----+--------+--------+------+--------+-------+--------------------+-------+
+1 row in set (0.00 sec)
+
+mysql> select id ,ename, sal, comm, city, total, password, zone, url from emp;
++----+--------+--------+------+--------+-------+--------------------+-------+---------+
+| id | ename  | sal    | comm | city   | total | password           | zone  | url     |
++----+--------+--------+------+--------+-------+--------------------+-------+---------+
+|  1 | saleel | 175.25 | 0.37 | baroda |   176 | 0x73616C65656C     | north | abc.com |
++----+--------+--------+------+--------+-------+--------------------+-------+---------+
+1 row in set (0.00 sec)
+
+mysql> select id ,ename, sal, comm, city, total, cast(password as char), zone, url from emp;
++----+--------+--------+------+--------+-------+------------------------+-------+---------+
+| id | ename  | sal    | comm | city   | total | cast(password as char) | zone  | url     |
++----+--------+--------+------+--------+-------+------------------------+-------+---------+
+|  1 | saleel | 175.25 | 0.37 | baroda |   176 | saleel                 | north | abc.com |
++----+--------+--------+------+--------+-------+------------------------+-------+---------+
+1 row in set (0.00 sec)
+
+mysql> insert into emp(id,ename,sal,comm, password, zone) values(101,'a', 4, 5 'abc','abc');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''abc','abc')' at line 1
+mysql> insert into emp(id,ename,sal,comm, password, zone) values(101,'a', 4, 5, 'abc','abc');
+ERROR 1265 (01000): Data truncated for column 'zone' at row 1
+mysql>
+mysql> insert into emp(id,ename,sal,comm, password, zone) values(101,'a', 4, 5, 'abc','north;);
+    '> ^C
+mysql> insert into emp(id,ename,sal,comm, password, zone) values(101,'a', 4, 5, 'abc','north');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into emp(id,ename,sal,comm, password, zone) values(default,'a', 4, 5, 'abc',1);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from emp;
++-----+--------+--------+------+--------+-------+--------------------+-------+
+| id  | ename  | sal    | comm | city   | total | password           | zone  |
++-----+--------+--------+------+--------+-------+--------------------+-------+
+|   1 | saleel | 175.25 | 0.37 | baroda |   176 | 0x73616C65656C     | north |
+| 101 | a      |   4.00 | 5.00 | baroda |     9 | 0x616263           | north |
+| 102 | a      |   4.00 | 5.00 | baroda |     9 | 0x616263           | north |
++-----+--------+--------+------+--------+-------+--------------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc emp;
++----------+-------------------------------------+------+-----+---------+-------------------+
+| Field    | Type                                | Null | Key | Default | Extra             |
++----------+-------------------------------------+------+-----+---------+-------------------+
+| id       | int                                 | NO   | PRI | NULL    | auto_increment    |
+| ename    | varchar(10)                         | YES  |     | NULL    |                   |
+| sal      | float(8,2)                          | YES  |     | NULL    |                   |
+| comm     | float(8,2)                          | YES  |     | NULL    |                   |
+| city     | varchar(10)                         | YES  |     | baroda  |                   |
+| total    | int                                 | YES  |     | NULL    | VIRTUAL GENERATED |
+| password | varbinary(10)                       | YES  |     | NULL    |                   |
+| zone     | enum('north','south','east','west') | YES  |     | NULL    |                   |
+| URL      | varchar(20)                         | YES  |     | NULL    | INVISIBLE         |
++----------+-------------------------------------+------+-----+---------+-------------------+
+9 rows in set (0.00 sec)
+
+mysql> desc a;
++-------+------+------+-----+---------------+-------------------+
+| Field | Type | Null | Key | Default       | Extra             |
++-------+------+------+-----+---------------+-------------------+
+| c1    | int  | YES  |     | NULL          |                   |
+| c2    | int  | YES  |     | NULL          |                   |
+| c3    | int  | YES  |     | (`c1` + `c2`) | DEFAULT_GENERATED |
++-------+------+------+-----+---------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> create table t1 (c1 int primary key auto_increment. c2 int);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '. c2 int)' at line 1
+mysql>
+mysql>
+mysql> create table t1 (c1 int primary key auto_increment, c2 int);
+ERROR 1050 (42S01): Table 't1' already exists
+mysql> create table t3 (c1 int primary key auto_increment, c2 int);
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> create table t4 (c1 int unique key auto_increment, c2 int);
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> desc t3;
++-------+------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra          |
++-------+------+------+-----+---------+----------------+
+| c1    | int  | NO   | PRI | NULL    | auto_increment |
+| c2    | int  | YES  |     | NULL    |                |
++-------+------+------+-----+---------+----------------+
+2 rows in set (0.00 sec)
+
+mysql> desc t4;
++-------+------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra          |
++-------+------+------+-----+---------+----------------+
+| c1    | int  | NO   | PRI | NULL    | auto_increment |
+| c2    | int  | YES  |     | NULL    |                |
++-------+------+------+-----+---------+----------------+
+2 rows in set (0.00 sec)
+
+mysql> create table t5 (c1 int unique key  not null, c2 int);
+Query OK, 0 rows affected (0.44 sec)
+
+mysql> desc t5;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | YES  |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> create table t6 (c1 int primary key, c2 int primary key);
+ERROR 1068 (42000): Multiple primary key defined
+mysql>
+mysql> create table t6 (c1 int primary key, c2 int not null unique);
+Query OK, 0 rows affected (0.13 sec)
+
+mysql> desc t6;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | UNI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> create table t7 (c1 int, c2 int,  primary key(c1));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> desc t7;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | YES  |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> create table t8 (c1 int, c2 int,  primary key(c1, c2));
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> desc t8;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> insert into t8 values(1,null);
+ERROR 1048 (23000): Column 'c2' cannot be null
+mysql> insert into t8 values(1,1);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from t8;
++----+----+
+| c1 | c2 |
++----+----+
+|  1 |  1 |
++----+----+
+1 row in set (0.00 sec)
+
+mysql> insert into t8 values(1,2);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from t8;
++----+----+
+| c1 | c2 |
++----+----+
+|  1 |  1 |
+|  1 |  2 |
++----+----+
+2 rows in set (0.00 sec)
+
+mysql> insert into t8 values(2,1);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from t8;
++----+----+
+| c1 | c2 |
++----+----+
+|  1 |  1 |
+|  1 |  2 |
+|  2 |  1 |
++----+----+
+3 rows in set (0.00 sec)
+
+mysql> insert into t8 values(1,2);
+ERROR 1062 (23000): Duplicate entry '1-2' for key 't8.PRIMARY'
+mysql> desc t8;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> desc t4;
++-------+------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra          |
++-------+------+------+-----+---------+----------------+
+| c1    | int  | NO   | PRI | NULL    | auto_increment |
+| c2    | int  | YES  |     | NULL    |                |
++-------+------+------+-----+---------+----------------+
+2 rows in set (0.00 sec)
+
+mysql> desc t7;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | YES  |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table t7 drop primary key;
+Query OK, 0 rows affected (0.14 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc t7;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   |     | NULL    |       |
+| c2    | int  | YES  |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table t7 modify c1 int null;
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc t7;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | YES  |     | NULL    |       |
+| c2    | int  | YES  |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table t7 modify c1 char;
+Query OK, 0 rows affected (0.16 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc t7;
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| c1    | char(1) | YES  |     | NULL    |       |
+| c2    | int     | YES  |     | NULL    |       |
++-------+---------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> create table a1 (id int, ename varchar(10));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> insert into a1 values(1, 'saleel');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select * from a1;
++------+--------+
+| id   | ename  |
++------+--------+
+|    1 | saleel |
++------+--------+
+1 row in set (0.00 sec)
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | YES  |     | NULL    |       |
+| ename | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table a1 modify id varchar(10);
+Query OK, 1 row affected (0.12 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | varchar(10) | YES  |     | NULL    |       |
+| ename | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> insert into a1 values('a', 'saleel');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select * from a1;
++------+--------+
+| id   | ename  |
++------+--------+
+| 1    | saleel |
+| a    | saleel |
++------+--------+
+2 rows in set (0.00 sec)
+
+mysql> alter table a1 modify id int;
+ERROR 1366 (HY000): Incorrect integer value: 'a' for column 'id' at row 2
+mysql> delete from a1 where id='a';
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select * from a1;
++------+--------+
+| id   | ename  |
++------+--------+
+| 1    | saleel |
++------+--------+
+1 row in set (0.00 sec)
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | varchar(10) | YES  |     | NULL    |       |
+| ename | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table a1 modify id int;
+Query OK, 1 row affected (0.14 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> select * from a1;
++------+--------+
+| id   | ename  |
++------+--------+
+|    1 | saleel |
++------+--------+
+1 row in set (0.00 sec)
+
+mysql> alter table a1 modify ename varchar(20);
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table a1 modify ename varchar(4);
+ERROR 1265 (01000): Data truncated for column 'ename' at row 1
+mysql> alter table a1 modify ename varchar(6);
+Query OK, 1 row affected (0.13 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+------------+------+-----+---------+-------+
+| Field | Type       | Null | Key | Default | Extra |
++-------+------------+------+-----+---------+-------+
+| id    | int        | YES  |     | NULL    |       |
+| ename | varchar(6) | YES  |     | NULL    |       |
++-------+------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table a1 add primary key(id);
+Query OK, 0 rows affected (0.29 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+------------+------+-----+---------+-------+
+| Field | Type       | Null | Key | Default | Extra |
++-------+------------+------+-----+---------+-------+
+| id    | int        | NO   | PRI | NULL    |       |
+| ename | varchar(6) | YES  |     | NULL    |       |
++-------+------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| dac1               |
+| dac10              |
+| dac100             |
+| dac101             |
+| dac102             |
+| dac103             |
+| dac104             |
+| dac105             |
+| dac106             |
+| dac107             |
+| dac108             |
+| dac109             |
+| dac11              |
+| dac110             |
+| dac111             |
+| dac112             |
+| dac113             |
+| dac114             |
+| dac115             |
+| dac116             |
+| dac117             |
+| dac118             |
+| dac119             |
+| dac12              |
+| dac120             |
+| dac13              |
+| dac14              |
+| dac15              |
+| dac16              |
+| dac17              |
+| dac18              |
+| dac19              |
+| dac2               |
+| dac20              |
+| dac21              |
+| dac22              |
+| dac23              |
+| dac24              |
+| dac25              |
+| dac26              |
+| dac27              |
+| dac28              |
+| dac29              |
+| dac3               |
+| dac30              |
+| dac31              |
+| dac32              |
+| dac33              |
+| dac34              |
+| dac35              |
+| dac36              |
+| dac37              |
+| dac38              |
+| dac39              |
+| dac4               |
+| dac40              |
+| dac41              |
+| dac42              |
+| dac43              |
+| dac44              |
+| dac45              |
+| dac46              |
+| dac47              |
+| dac48              |
+| dac49              |
+| dac5               |
+| dac50              |
+| dac51              |
+| dac52              |
+| dac53              |
+| dac54              |
+| dac55              |
+| dac56              |
+| dac57              |
+| dac58              |
+| dac59              |
+| dac6               |
+| dac60              |
+| dac61              |
+| dac62              |
+| dac63              |
+| dac64              |
+| dac65              |
+| dac66              |
+| dac67              |
+| dac68              |
+| dac69              |
+| dac7               |
+| dac70              |
+| dac71              |
+| dac72              |
+| dac73              |
+| dac74              |
+| dac75              |
+| dac76              |
+| dac77              |
+| dac78              |
+| dac79              |
+| dac8               |
+| dac80              |
+| dac81              |
+| dac82              |
+| dac83              |
+| dac84              |
+| dac85              |
+| dac86              |
+| dac87              |
+| dac88              |
+| dac89              |
+| dac9               |
+| dac90              |
+| dac91              |
+| dac92              |
+| dac93              |
+| dac94              |
+| dac95              |
+| dac96              |
+| dac97              |
+| dac98              |
+| dac99              |
+| db1                |
+| db2                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+128 rows in set (0.00 sec)
+
+mysql> use information_schema;
+Database changed
+mysql> use db2;
+Database changed
+mysql> show full tables;
++---------------+------------+
+| Tables_in_db2 | Table_type |
++---------------+------------+
+| a             | BASE TABLE |
+| a1            | BASE TABLE |
+| b             | BASE TABLE |
+| emp           | BASE TABLE |
+| t1            | BASE TABLE |
+| t2            | BASE TABLE |
+| t3            | BASE TABLE |
+| t4            | BASE TABLE |
+| t5            | BASE TABLE |
+| t6            | BASE TABLE |
+| t7            | BASE TABLE |
+| t8            | BASE TABLE |
++---------------+------------+
+12 rows in set (0.00 sec)
+
+mysql> show tables;
++---------------+
+| Tables_in_db2 |
++---------------+
+| a             |
+| a1            |
+| b             |
+| emp           |
+| t1            |
+| t2            |
+| t3            |
+| t4            |
+| t5            |
+| t6            |
+| t7            |
+| t8            |
++---------------+
+12 rows in set (0.00 sec)
+
+mysql> desc b;
++-------+-------------+------+-----+-------------------+-------------------+
+| Field | Type        | Null | Key | Default           | Extra             |
++-------+-------------+------+-----+-------------------+-------------------+
+| c1    | int         | YES  |     | NULL              |                   |
+| c2    | varchar(10) | YES  |     | NULL              |                   |
+| c3    | datetime    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-------+-------------+------+-----+-------------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> use information_schema
+Database changed
+mysql> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show tables;
++---------------------------------------+
+| Tables_in_information_schema          |
++---------------------------------------+
+| ADMINISTRABLE_ROLE_AUTHORIZATIONS     |
+| APPLICABLE_ROLES                      |
+| CHARACTER_SETS                        |
+| CHECK_CONSTRAINTS                     |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLLATIONS                            |
+| COLUMN_PRIVILEGES                     |
+| COLUMN_STATISTICS                     |
+| COLUMNS                               |
+| COLUMNS_EXTENSIONS                    |
+| ENABLED_ROLES                         |
+| ENGINES                               |
+| EVENTS                                |
+| FILES                                 |
+| INNODB_BUFFER_PAGE                    |
+| INNODB_BUFFER_PAGE_LRU                |
+| INNODB_BUFFER_POOL_STATS              |
+| INNODB_CACHED_INDEXES                 |
+| INNODB_CMP                            |
+| INNODB_CMP_PER_INDEX                  |
+| INNODB_CMP_PER_INDEX_RESET            |
+| INNODB_CMP_RESET                      |
+| INNODB_CMPMEM                         |
+| INNODB_CMPMEM_RESET                   |
+| INNODB_COLUMNS                        |
+| INNODB_DATAFILES                      |
+| INNODB_FIELDS                         |
+| INNODB_FOREIGN                        |
+| INNODB_FOREIGN_COLS                   |
+| INNODB_FT_BEING_DELETED               |
+| INNODB_FT_CONFIG                      |
+| INNODB_FT_DEFAULT_STOPWORD            |
+| INNODB_FT_DELETED                     |
+| INNODB_FT_INDEX_CACHE                 |
+| INNODB_FT_INDEX_TABLE                 |
+| INNODB_INDEXES                        |
+| INNODB_METRICS                        |
+| INNODB_SESSION_TEMP_TABLESPACES       |
+| INNODB_TABLES                         |
+| INNODB_TABLESPACES                    |
+| INNODB_TABLESPACES_BRIEF              |
+| INNODB_TABLESTATS                     |
+| INNODB_TEMP_TABLE_INFO                |
+| INNODB_TRX                            |
+| INNODB_VIRTUAL                        |
+| KEY_COLUMN_USAGE                      |
+| KEYWORDS                              |
+| OPTIMIZER_TRACE                       |
+| PARAMETERS                            |
+| PARTITIONS                            |
+| PLUGINS                               |
+| PROCESSLIST                           |
+| PROFILING                             |
+| REFERENTIAL_CONSTRAINTS               |
+| RESOURCE_GROUPS                       |
+| ROLE_COLUMN_GRANTS                    |
+| ROLE_ROUTINE_GRANTS                   |
+| ROLE_TABLE_GRANTS                     |
+| ROUTINES                              |
+| SCHEMA_PRIVILEGES                     |
+| SCHEMATA                              |
+| SCHEMATA_EXTENSIONS                   |
+| ST_GEOMETRY_COLUMNS                   |
+| ST_SPATIAL_REFERENCE_SYSTEMS          |
+| ST_UNITS_OF_MEASURE                   |
+| STATISTICS                            |
+| TABLE_CONSTRAINTS                     |
+| TABLE_CONSTRAINTS_EXTENSIONS          |
+| TABLE_PRIVILEGES                      |
+| TABLES                                |
+| TABLES_EXTENSIONS                     |
+| TABLESPACES                           |
+| TABLESPACES_EXTENSIONS                |
+| TRIGGERS                              |
+| USER_ATTRIBUTES                       |
+| USER_PRIVILEGES                       |
+| VIEW_ROUTINE_USAGE                    |
+| VIEW_TABLE_USAGE                      |
+| VIEWS                                 |
++---------------------------------------+
+79 rows in set (0.00 sec)
+
+mysql> desc  tables;
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+| Field           | Type                                                               | Null | Key | Default | Extra |
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+| TABLE_CATALOG   | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_SCHEMA    | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_NAME      | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_TYPE      | enum('BASE TABLE','VIEW','SYSTEM VIEW')                            | NO   |     | NULL    |       |
+| ENGINE          | varchar(64)                                                        | YES  |     | NULL    |       |
+| VERSION         | int                                                                | YES  |     | NULL    |       |
+| ROW_FORMAT      | enum('Fixed','Dynamic','Compressed','Redundant','Compact','Paged') | YES  |     | NULL    |       |
+| TABLE_ROWS      | bigint unsigned                                                    | YES  |     | NULL    |       |
+| AVG_ROW_LENGTH  | bigint unsigned                                                    | YES  |     | NULL    |       |
+| DATA_LENGTH     | bigint unsigned                                                    | YES  |     | NULL    |       |
+| MAX_DATA_LENGTH | bigint unsigned                                                    | YES  |     | NULL    |       |
+| INDEX_LENGTH    | bigint unsigned                                                    | YES  |     | NULL    |       |
+| DATA_FREE       | bigint unsigned                                                    | YES  |     | NULL    |       |
+| AUTO_INCREMENT  | bigint unsigned                                                    | YES  |     | NULL    |       |
+| CREATE_TIME     | timestamp                                                          | NO   |     | NULL    |       |
+| UPDATE_TIME     | datetime                                                           | YES  |     | NULL    |       |
+| CHECK_TIME      | datetime                                                           | YES  |     | NULL    |       |
+| TABLE_COLLATION | varchar(64)                                                        | YES  |     | NULL    |       |
+| CHECKSUM        | bigint                                                             | YES  |     | NULL    |       |
+| CREATE_OPTIONS  | varchar(256)                                                       | YES  |     | NULL    |       |
+| TABLE_COMMENT   | text                                                               | YES  |     | NULL    |       |
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+21 rows in set (0.01 sec)
+
+mysql> desc  tables;
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+| Field           | Type                                                               | Null | Key | Default | Extra |
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+| TABLE_CATALOG   | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_SCHEMA    | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_NAME      | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_TYPE      | enum('BASE TABLE','VIEW','SYSTEM VIEW')                            | NO   |     | NULL    |       |
+| ENGINE          | varchar(64)                                                        | YES  |     | NULL    |       |
+| VERSION         | int                                                                | YES  |     | NULL    |       |
+| ROW_FORMAT      | enum('Fixed','Dynamic','Compressed','Redundant','Compact','Paged') | YES  |     | NULL    |       |
+| TABLE_ROWS      | bigint unsigned                                                    | YES  |     | NULL    |       |
+| AVG_ROW_LENGTH  | bigint unsigned                                                    | YES  |     | NULL    |       |
+| DATA_LENGTH     | bigint unsigned                                                    | YES  |     | NULL    |       |
+| MAX_DATA_LENGTH | bigint unsigned                                                    | YES  |     | NULL    |       |
+| INDEX_LENGTH    | bigint unsigned                                                    | YES  |     | NULL    |       |
+| DATA_FREE       | bigint unsigned                                                    | YES  |     | NULL    |       |
+| AUTO_INCREMENT  | bigint unsigned                                                    | YES  |     | NULL    |       |
+| CREATE_TIME     | timestamp                                                          | NO   |     | NULL    |       |
+| UPDATE_TIME     | datetime                                                           | YES  |     | NULL    |       |
+| CHECK_TIME      | datetime                                                           | YES  |     | NULL    |       |
+| TABLE_COLLATION | varchar(64)                                                        | YES  |     | NULL    |       |
+| CHECKSUM        | bigint                                                             | YES  |     | NULL    |       |
+| CREATE_OPTIONS  | varchar(256)                                                       | YES  |     | NULL    |       |
+| TABLE_COMMENT   | text                                                               | YES  |     | NULL    |       |
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+21 rows in set (0.00 sec)
+
+mysql> select database();
++--------------------+
+| database()         |
++--------------------+
+| information_schema |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> use db1;
+Database changed
+mysql> desc emp;
+ERROR 1146 (42S02): Table 'db1.emp' doesn't exist
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> use db2;
+Database changed
+mysql> show tables;
++---------------+
+| Tables_in_db2 |
++---------------+
+| a             |
+| a1            |
+| b             |
+| emp           |
+| t1            |
+| t2            |
+| t3            |
+| t4            |
+| t5            |
+| t6            |
+| t7            |
+| t8            |
++---------------+
+12 rows in set (0.00 sec)
+
+mysql> select * from emp;
++-----+--------+--------+------+--------+-------+--------------------+-------+
+| id  | ename  | sal    | comm | city   | total | password           | zone  |
++-----+--------+--------+------+--------+-------+--------------------+-------+
+|   1 | saleel | 175.25 | 0.37 | baroda |   176 | 0x73616C65656C     | north |
+| 101 | a      |   4.00 | 5.00 | baroda |     9 | 0x616263           | north |
+| 102 | a      |   4.00 | 5.00 | baroda |     9 | 0x616263           | north |
++-----+--------+--------+------+--------+-------+--------------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> use information_schema
+Database changed
+mysql> desc tables;
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+| Field           | Type                                                               | Null | Key | Default | Extra |
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+| TABLE_CATALOG   | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_SCHEMA    | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_NAME      | varchar(64)                                                        | YES  |     | NULL    |       |
+| TABLE_TYPE      | enum('BASE TABLE','VIEW','SYSTEM VIEW')                            | NO   |     | NULL    |       |
+| ENGINE          | varchar(64)                                                        | YES  |     | NULL    |       |
+| VERSION         | int                                                                | YES  |     | NULL    |       |
+| ROW_FORMAT      | enum('Fixed','Dynamic','Compressed','Redundant','Compact','Paged') | YES  |     | NULL    |       |
+| TABLE_ROWS      | bigint unsigned                                                    | YES  |     | NULL    |       |
+| AVG_ROW_LENGTH  | bigint unsigned                                                    | YES  |     | NULL    |       |
+| DATA_LENGTH     | bigint unsigned                                                    | YES  |     | NULL    |       |
+| MAX_DATA_LENGTH | bigint unsigned                                                    | YES  |     | NULL    |       |
+| INDEX_LENGTH    | bigint unsigned                                                    | YES  |     | NULL    |       |
+| DATA_FREE       | bigint unsigned                                                    | YES  |     | NULL    |       |
+| AUTO_INCREMENT  | bigint unsigned                                                    | YES  |     | NULL    |       |
+| CREATE_TIME     | timestamp                                                          | NO   |     | NULL    |       |
+| UPDATE_TIME     | datetime                                                           | YES  |     | NULL    |       |
+| CHECK_TIME      | datetime                                                           | YES  |     | NULL    |       |
+| TABLE_COLLATION | varchar(64)                                                        | YES  |     | NULL    |       |
+| CHECKSUM        | bigint                                                             | YES  |     | NULL    |       |
+| CREATE_OPTIONS  | varchar(256)                                                       | YES  |     | NULL    |       |
+| TABLE_COMMENT   | text                                                               | YES  |     | NULL    |       |
++-----------------+--------------------------------------------------------------------+------+-----+---------+-------+
+21 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME,TABLE_ROWS, AUTO_INCREMENT from tables;
++------------------------------------------------------+------------+----------------+
+| TABLE_NAME                                           | TABLE_ROWS | AUTO_INCREMENT |
++------------------------------------------------------+------------+----------------+
+| innodb_table_stats                                   |         33 |           NULL |
+| innodb_index_stats                                   |        197 |           NULL |
+| CHARACTER_SETS                                       |          0 |           NULL |
+| CHECK_CONSTRAINTS                                    |          0 |           NULL |
+| COLLATIONS                                           |          0 |           NULL |
+| COLLATION_CHARACTER_SET_APPLICABILITY                |          0 |           NULL |
+| COLUMNS                                              |          0 |           NULL |
+| COLUMNS_EXTENSIONS                                   |          0 |           NULL |
+| COLUMN_STATISTICS                                    |          0 |           NULL |
+| EVENTS                                               |          0 |           NULL |
+| FILES                                                |          0 |           NULL |
+| INNODB_DATAFILES                                     |          0 |           NULL |
+| INNODB_FOREIGN                                       |          0 |           NULL |
+| INNODB_FOREIGN_COLS                                  |          0 |           NULL |
+| INNODB_FIELDS                                        |          0 |           NULL |
+| INNODB_TABLESPACES_BRIEF                             |          0 |           NULL |
+| KEY_COLUMN_USAGE                                     |          0 |           NULL |
+| KEYWORDS                                             |          0 |           NULL |
+| PARAMETERS                                           |          0 |           NULL |
+| PARTITIONS                                           |          0 |           NULL |
+| REFERENTIAL_CONSTRAINTS                              |          0 |           NULL |
+| RESOURCE_GROUPS                                      |          0 |           NULL |
+| ROUTINES                                             |          0 |           NULL |
+| SCHEMATA                                             |          0 |           NULL |
+| SCHEMATA_EXTENSIONS                                  |          0 |           NULL |
+| ST_SPATIAL_REFERENCE_SYSTEMS                         |          0 |           NULL |
+| ST_UNITS_OF_MEASURE                                  |          0 |           NULL |
+| ST_GEOMETRY_COLUMNS                                  |          0 |           NULL |
+| STATISTICS                                           |          0 |           NULL |
+| TABLE_CONSTRAINTS                                    |          0 |           NULL |
+| TABLE_CONSTRAINTS_EXTENSIONS                         |          0 |           NULL |
+| TABLES                                               |          0 |           NULL |
+| TABLES_EXTENSIONS                                    |          0 |           NULL |
+| TABLESPACES_EXTENSIONS                               |          0 |           NULL |
+| TRIGGERS                                             |          0 |           NULL |
+| VIEW_ROUTINE_USAGE                                   |          0 |           NULL |
+| VIEW_TABLE_USAGE                                     |          0 |           NULL |
+| VIEWS                                                |          0 |           NULL |
+| COLUMN_PRIVILEGES                                    |          0 |           NULL |
+| ENGINES                                              |          0 |           NULL |
+| OPTIMIZER_TRACE                                      |          0 |           NULL |
+| PLUGINS                                              |          0 |           NULL |
+| PROCESSLIST                                          |          0 |           NULL |
+| PROFILING                                            |          0 |           NULL |
+| SCHEMA_PRIVILEGES                                    |          0 |           NULL |
+| TABLESPACES                                          |          0 |           NULL |
+| TABLE_PRIVILEGES                                     |          0 |           NULL |
+| USER_PRIVILEGES                                      |          0 |           NULL |
+| cond_instances                                       |        256 |           NULL |
+| error_log                                            |        281 |           NULL |
+| events_waits_current                                 |       1536 |           NULL |
+| events_waits_history                                 |       2560 |           NULL |
+| events_waits_history_long                            |      10000 |           NULL |
+| events_waits_summary_by_host_by_event_name           |      83712 |           NULL |
+| events_waits_summary_by_instance                     |      10752 |           NULL |
+| events_waits_summary_by_thread_by_event_name         |     167424 |           NULL |
+| events_waits_summary_by_user_by_event_name           |      83712 |           NULL |
+| events_waits_summary_by_account_by_event_name        |      83712 |           NULL |
+| events_waits_summary_global_by_event_name            |        654 |           NULL |
+| file_instances                                       |       4096 |           NULL |
+| file_summary_by_event_name                           |         80 |           NULL |
+| file_summary_by_instance                             |       4096 |           NULL |
+| host_cache                                           |        279 |           NULL |
+| mutex_instances                                      |       4096 |           NULL |
+| objects_summary_global_by_type                       |       4096 |           NULL |
+| performance_timers                                   |          5 |           NULL |
+| processlist                                          |        256 |           NULL |
+| rwlock_instances                                     |       2048 |           NULL |
+| setup_actors                                         |        128 |           NULL |
+| setup_consumers                                      |         16 |           NULL |
+| setup_instruments                                    |       1500 |           NULL |
+| setup_objects                                        |        128 |           NULL |
+| setup_threads                                        |        100 |           NULL |
+| table_io_waits_summary_by_index_usage                |       8192 |           NULL |
+| table_io_waits_summary_by_table                      |       4096 |           NULL |
+| table_lock_waits_summary_by_table                    |       4096 |           NULL |
+| threads                                              |        256 |           NULL |
+| events_stages_current                                |        256 |           NULL |
+| events_stages_history                                |       2560 |           NULL |
+| events_stages_history_long                           |      10000 |           NULL |
+| events_stages_summary_by_thread_by_event_name        |      44800 |           NULL |
+| events_stages_summary_by_account_by_event_name       |      22400 |           NULL |
+| events_stages_summary_by_user_by_event_name          |      22400 |           NULL |
+| events_stages_summary_by_host_by_event_name          |      22400 |           NULL |
+| events_stages_summary_global_by_event_name           |        175 |           NULL |
+| events_statements_current                            |       2560 |           NULL |
+| events_statements_history                            |       2560 |           NULL |
+| events_statements_history_long                       |      10000 |           NULL |
+| events_statements_summary_by_thread_by_event_name    |      56064 |           NULL |
+| events_statements_summary_by_account_by_event_name   |      28032 |           NULL |
+| events_statements_summary_by_user_by_event_name      |      28032 |           NULL |
+| events_statements_summary_by_host_by_event_name      |      28032 |           NULL |
+| events_statements_summary_global_by_event_name       |        219 |           NULL |
+| events_statements_summary_by_digest                  |      10000 |           NULL |
+| events_statements_summary_by_program                 |          0 |           NULL |
+| events_statements_histogram_global                   |        450 |           NULL |
+| events_statements_histogram_by_digest                |      10000 |           NULL |
+| events_transactions_current                          |        256 |           NULL |
+| events_transactions_history                          |       2560 |           NULL |
+| events_transactions_history_long                     |      10000 |           NULL |
+| events_transactions_summary_by_thread_by_event_name  |        256 |           NULL |
+| events_transactions_summary_by_account_by_event_name |        128 |           NULL |
+| events_transactions_summary_by_user_by_event_name    |        128 |           NULL |
+| events_transactions_summary_by_host_by_event_name    |        128 |           NULL |
+| events_transactions_summary_global_by_event_name     |          1 |           NULL |
+| events_errors_summary_by_user_by_error               |     203520 |           NULL |
+| events_errors_summary_by_host_by_error               |     203520 |           NULL |
+| events_errors_summary_by_account_by_error            |     203520 |           NULL |
+| events_errors_summary_by_thread_by_error             |     407040 |           NULL |
+| events_errors_summary_global_by_error                |       5153 |           NULL |
+| users                                                |        128 |           NULL |
+| accounts                                             |        128 |           NULL |
+| hosts                                                |        128 |           NULL |
+| socket_instances                                     |        256 |           NULL |
+| socket_summary_by_instance                           |        256 |           NULL |
+| socket_summary_by_event_name                         |         10 |           NULL |
+| session_connect_attrs                                |     131072 |           NULL |
+| session_account_connect_attrs                        |     131072 |           NULL |
+| keyring_keys                                         |         96 |           NULL |
+| memory_summary_global_by_event_name                  |        450 |           NULL |
+| memory_summary_by_account_by_event_name              |      57600 |           NULL |
+| memory_summary_by_host_by_event_name                 |      57600 |           NULL |
+| memory_summary_by_thread_by_event_name               |     115200 |           NULL |
+| memory_summary_by_user_by_event_name                 |      57600 |           NULL |
+| table_handles                                        |       1024 |           NULL |
+| metadata_locks                                       |       1024 |           NULL |
+| data_locks                                           |      99999 |           NULL |
+| data_lock_waits                                      |      99999 |           NULL |
+| replication_connection_configuration                 |        256 |           NULL |
+| replication_group_members                            |          0 |           NULL |
+| replication_connection_status                        |        256 |           NULL |
+| replication_applier_configuration                    |        256 |           NULL |
+| replication_applier_status                           |        256 |           NULL |
+| replication_applier_status_by_coordinator            |        256 |           NULL |
+| replication_applier_status_by_worker                 |       8192 |           NULL |
+| replication_group_member_stats                       |          0 |           NULL |
+| replication_applier_filters                          |          0 |           NULL |
+| replication_applier_global_filters                   |          0 |           NULL |
+| replication_asynchronous_connection_failover         |          0 |           NULL |
+| replication_asynchronous_connection_failover_managed |          0 |           NULL |
+| log_status                                           |          1 |           NULL |
+| prepared_statements_instances                        |          0 |           NULL |
+| user_variables_by_thread                             |       2560 |           NULL |
+| status_by_account                                    |      32512 |           NULL |
+| status_by_host                                       |      32512 |           NULL |
+| status_by_thread                                     |      65024 |           NULL |
+| status_by_user                                       |      32512 |           NULL |
+| global_status                                        |        254 |           NULL |
+| session_status                                       |        254 |           NULL |
+| variables_by_thread                                  |     172288 |           NULL |
+| global_variables                                     |        673 |           NULL |
+| session_variables                                    |        673 |           NULL |
+| variables_info                                       |        673 |           NULL |
+| persisted_variables                                  |          0 |           NULL |
+| user_defined_functions                               |         16 |           NULL |
+| binary_log_transaction_compression_stats             |          0 |           NULL |
+| tls_channel_status                                   |         96 |           NULL |
+| keyring_component_status                             |         64 |           NULL |
+| db                                                   |         69 |           NULL |
+| user                                                 |        120 |           NULL |
+| default_roles                                        |          0 |           NULL |
+| role_edges                                           |          0 |           NULL |
+| global_grants                                        |         89 |           NULL |
+| password_history                                     |          0 |           NULL |
+| func                                                 |          0 |           NULL |
+| plugin                                               |          0 |           NULL |
+| help_topic                                           |        393 |           NULL |
+| help_category                                        |         53 |           NULL |
+| help_relation                                        |       1942 |           NULL |
+| servers                                              |          0 |           NULL |
+| tables_priv                                          |          2 |           NULL |
+| columns_priv                                         |          0 |           NULL |
+| help_keyword                                         |        759 |           NULL |
+| time_zone_name                                       |          0 |           NULL |
+| time_zone                                            |          0 |              1 |
+| time_zone_transition                                 |          0 |           NULL |
+| time_zone_transition_type                            |          0 |           NULL |
+| time_zone_leap_second                                |          0 |           NULL |
+| procs_priv                                           |          0 |           NULL |
+| general_log                                          |          2 |           NULL |
+| slow_log                                             |          2 |           NULL |
+| component                                            |          0 |              1 |
+| slave_relay_log_info                                 |          0 |           NULL |
+| slave_master_info                                    |          0 |           NULL |
+| slave_worker_info                                    |          0 |           NULL |
+| gtid_executed                                        |          0 |           NULL |
+| replication_asynchronous_connection_failover         |          0 |           NULL |
+| replication_asynchronous_connection_failover_managed |          0 |           NULL |
+| replication_group_member_actions                     |          2 |           NULL |
+| replication_group_configuration_version              |          1 |           NULL |
+| server_cost                                          |          6 |           NULL |
+| engine_cost                                          |          2 |           NULL |
+| proxies_priv                                         |          1 |           NULL |
+| version                                              |       NULL |           NULL |
+| sys_config                                           |          6 |           NULL |
+| innodb_buffer_stats_by_schema                        |       NULL |           NULL |
+| x$innodb_buffer_stats_by_schema                      |       NULL |           NULL |
+| innodb_buffer_stats_by_table                         |       NULL |           NULL |
+| x$innodb_buffer_stats_by_table                       |       NULL |           NULL |
+| schema_object_overview                               |       NULL |           NULL |
+| schema_auto_increment_columns                        |       NULL |           NULL |
+| x$schema_flattened_keys                              |       NULL |           NULL |
+| schema_redundant_indexes                             |       NULL |           NULL |
+| ps_check_lost_instrumentation                        |       NULL |           NULL |
+| latest_file_io                                       |       NULL |           NULL |
+| x$latest_file_io                                     |       NULL |           NULL |
+| io_by_thread_by_latency                              |       NULL |           NULL |
+| x$io_by_thread_by_latency                            |       NULL |           NULL |
+| io_global_by_file_by_bytes                           |       NULL |           NULL |
+| x$io_global_by_file_by_bytes                         |       NULL |           NULL |
+| io_global_by_file_by_latency                         |       NULL |           NULL |
+| x$io_global_by_file_by_latency                       |       NULL |           NULL |
+| io_global_by_wait_by_bytes                           |       NULL |           NULL |
+| x$io_global_by_wait_by_bytes                         |       NULL |           NULL |
+| io_global_by_wait_by_latency                         |       NULL |           NULL |
+| x$io_global_by_wait_by_latency                       |       NULL |           NULL |
+| innodb_lock_waits                                    |       NULL |           NULL |
+| x$innodb_lock_waits                                  |       NULL |           NULL |
+| memory_by_user_by_current_bytes                      |       NULL |           NULL |
+| x$memory_by_user_by_current_bytes                    |       NULL |           NULL |
+| memory_by_host_by_current_bytes                      |       NULL |           NULL |
+| x$memory_by_host_by_current_bytes                    |       NULL |           NULL |
+| memory_by_thread_by_current_bytes                    |       NULL |           NULL |
+| x$memory_by_thread_by_current_bytes                  |       NULL |           NULL |
+| memory_global_by_current_bytes                       |       NULL |           NULL |
+| x$memory_global_by_current_bytes                     |       NULL |           NULL |
+| memory_global_total                                  |       NULL |           NULL |
+| x$memory_global_total                                |       NULL |           NULL |
+| schema_index_statistics                              |       NULL |           NULL |
+| x$schema_index_statistics                            |       NULL |           NULL |
+| x$ps_schema_table_statistics_io                      |       NULL |           NULL |
+| schema_table_statistics                              |       NULL |           NULL |
+| x$schema_table_statistics                            |       NULL |           NULL |
+| schema_table_statistics_with_buffer                  |       NULL |           NULL |
+| x$schema_table_statistics_with_buffer                |       NULL |           NULL |
+| schema_tables_with_full_table_scans                  |       NULL |           NULL |
+| x$schema_tables_with_full_table_scans                |       NULL |           NULL |
+| schema_unused_indexes                                |       NULL |           NULL |
+| schema_table_lock_waits                              |       NULL |           NULL |
+| x$schema_table_lock_waits                            |       NULL |           NULL |
+| statement_analysis                                   |       NULL |           NULL |
+| x$statement_analysis                                 |       NULL |           NULL |
+| statements_with_errors_or_warnings                   |       NULL |           NULL |
+| x$statements_with_errors_or_warnings                 |       NULL |           NULL |
+| statements_with_full_table_scans                     |       NULL |           NULL |
+| x$statements_with_full_table_scans                   |       NULL |           NULL |
+| x$ps_digest_avg_latency_distribution                 |       NULL |           NULL |
+| x$ps_digest_95th_percentile_by_avg_us                |       NULL |           NULL |
+| statements_with_runtimes_in_95th_percentile          |       NULL |           NULL |
+| x$statements_with_runtimes_in_95th_percentile        |       NULL |           NULL |
+| statements_with_sorting                              |       NULL |           NULL |
+| x$statements_with_sorting                            |       NULL |           NULL |
+| statements_with_temp_tables                          |       NULL |           NULL |
+| x$statements_with_temp_tables                        |       NULL |           NULL |
+| user_summary_by_file_io_type                         |       NULL |           NULL |
+| x$user_summary_by_file_io_type                       |       NULL |           NULL |
+| user_summary_by_file_io                              |       NULL |           NULL |
+| x$user_summary_by_file_io                            |       NULL |           NULL |
+| user_summary_by_statement_type                       |       NULL |           NULL |
+| x$user_summary_by_statement_type                     |       NULL |           NULL |
+| user_summary_by_statement_latency                    |       NULL |           NULL |
+| x$user_summary_by_statement_latency                  |       NULL |           NULL |
+| user_summary_by_stages                               |       NULL |           NULL |
+| x$user_summary_by_stages                             |       NULL |           NULL |
+| user_summary                                         |       NULL |           NULL |
+| x$user_summary                                       |       NULL |           NULL |
+| host_summary_by_file_io_type                         |       NULL |           NULL |
+| x$host_summary_by_file_io_type                       |       NULL |           NULL |
+| host_summary_by_file_io                              |       NULL |           NULL |
+| x$host_summary_by_file_io                            |       NULL |           NULL |
+| host_summary_by_statement_type                       |       NULL |           NULL |
+| x$host_summary_by_statement_type                     |       NULL |           NULL |
+| host_summary_by_statement_latency                    |       NULL |           NULL |
+| x$host_summary_by_statement_latency                  |       NULL |           NULL |
+| host_summary_by_stages                               |       NULL |           NULL |
+| x$host_summary_by_stages                             |       NULL |           NULL |
+| host_summary                                         |       NULL |           NULL |
+| x$host_summary                                       |       NULL |           NULL |
+| wait_classes_global_by_avg_latency                   |       NULL |           NULL |
+| x$wait_classes_global_by_avg_latency                 |       NULL |           NULL |
+| wait_classes_global_by_latency                       |       NULL |           NULL |
+| x$wait_classes_global_by_latency                     |       NULL |           NULL |
+| waits_by_user_by_latency                             |       NULL |           NULL |
+| x$waits_by_user_by_latency                           |       NULL |           NULL |
+| waits_by_host_by_latency                             |       NULL |           NULL |
+| x$waits_by_host_by_latency                           |       NULL |           NULL |
+| waits_global_by_latency                              |       NULL |           NULL |
+| x$waits_global_by_latency                            |       NULL |           NULL |
+| metrics                                              |       NULL |           NULL |
+| processlist                                          |       NULL |           NULL |
+| x$processlist                                        |       NULL |           NULL |
+| session                                              |       NULL |           NULL |
+| x$session                                            |       NULL |           NULL |
+| session_ssl_status                                   |       NULL |           NULL |
+| ENABLED_ROLES                                        |          0 |           NULL |
+| APPLICABLE_ROLES                                     |          0 |           NULL |
+| ADMINISTRABLE_ROLE_AUTHORIZATIONS                    |          0 |           NULL |
+| ROLE_COLUMN_GRANTS                                   |          0 |           NULL |
+| ROLE_ROUTINE_GRANTS                                  |          0 |           NULL |
+| ROLE_TABLE_GRANTS                                    |          0 |           NULL |
+| USER_ATTRIBUTES                                      |          0 |           NULL |
+| INNODB_CMP                                           |          0 |           NULL |
+| INNODB_CMPMEM                                        |          0 |           NULL |
+| INNODB_TRX                                           |          0 |           NULL |
+| INNODB_CMP_PER_INDEX                                 |          0 |           NULL |
+| INNODB_CMP_RESET                                     |          0 |           NULL |
+| INNODB_FT_DELETED                                    |          0 |           NULL |
+| INNODB_BUFFER_POOL_STATS                             |          0 |           NULL |
+| INNODB_CMPMEM_RESET                                  |          0 |           NULL |
+| INNODB_BUFFER_PAGE_LRU                               |          0 |           NULL |
+| INNODB_CMP_PER_INDEX_RESET                           |          0 |           NULL |
+| INNODB_FT_CONFIG                                     |          0 |           NULL |
+| INNODB_BUFFER_PAGE                                   |          0 |           NULL |
+| INNODB_TABLESPACES                                   |          0 |           NULL |
+| INNODB_FT_BEING_DELETED                              |          0 |           NULL |
+| INNODB_TEMP_TABLE_INFO                               |          0 |           NULL |
+| INNODB_FT_DEFAULT_STOPWORD                           |          0 |           NULL |
+| INNODB_METRICS                                       |          0 |           NULL |
+| INNODB_FT_INDEX_CACHE                                |          0 |           NULL |
+| INNODB_FT_INDEX_TABLE                                |          0 |           NULL |
+| INNODB_TABLES                                        |          0 |           NULL |
+| INNODB_TABLESTATS                                    |          0 |           NULL |
+| INNODB_INDEXES                                       |          0 |           NULL |
+| INNODB_COLUMNS                                       |          0 |           NULL |
+| INNODB_VIRTUAL                                       |          0 |           NULL |
+| INNODB_CACHED_INDEXES                                |          0 |           NULL |
+| INNODB_SESSION_TEMP_TABLESPACES                      |          0 |           NULL |
+| actor                                                |        200 |            200 |
+| address                                              |        603 |            605 |
+| category                                             |         16 |             16 |
+| city                                                 |        600 |            600 |
+| country                                              |        109 |            109 |
+| customer                                             |        599 |            599 |
+| film                                                 |       1000 |           1000 |
+| film_actor                                           |       5462 |           NULL |
+| film_category                                        |       1000 |           NULL |
+| film_text                                            |       1000 |           NULL |
+| inventory                                            |       4581 |           4581 |
+| language                                             |          6 |              6 |
+| payment                                              |      16500 |          16049 |
+| rental                                               |      15425 |          16049 |
+| staff                                                |          2 |              2 |
+| store                                                |          2 |              2 |
+| customer_list                                        |       NULL |           NULL |
+| film_list                                            |       NULL |           NULL |
+| nicer_but_slower_film_list                           |       NULL |           NULL |
+| staff_list                                           |       NULL |           NULL |
+| sales_by_store                                       |       NULL |           NULL |
+| sales_by_film_category                               |       NULL |           NULL |
+| actor_info                                           |       NULL |           NULL |
+| city                                                 |       4046 |           4079 |
+| country                                              |        239 |           NULL |
+| countrylanguage                                      |        984 |           NULL |
+| innodb_redo_log_files                                |          1 |           NULL |
+| a                                                    |          2 |           NULL |
+| b                                                    |          1 |           NULL |
+| t1                                                   |          2 |           NULL |
+| t2                                                   |          2 |           NULL |
+| emp                                                  |          3 |            103 |
+| t3                                                   |          0 |           NULL |
+| t4                                                   |          0 |           NULL |
+| t5                                                   |          0 |           NULL |
+| t6                                                   |          0 |           NULL |
+| t8                                                   |          3 |           NULL |
+| t7                                                   |          0 |           NULL |
+| a1                                                   |          1 |           NULL |
++------------------------------------------------------+------------+----------------+
+366 rows in set (0.39 sec)
+
+mysql> desc columns;
++--------------------------+----------------------------+------+-----+---------+-------+
+| Field                    | Type                       | Null | Key | Default | Extra |
++--------------------------+----------------------------+------+-----+---------+-------+
+| TABLE_CATALOG            | varchar(64)                | YES  |     | NULL    |       |
+| TABLE_SCHEMA             | varchar(64)                | YES  |     | NULL    |       |
+| TABLE_NAME               | varchar(64)                | YES  |     | NULL    |       |
+| COLUMN_NAME              | varchar(64)                | YES  |     | NULL    |       |
+| ORDINAL_POSITION         | int unsigned               | NO   |     | NULL    |       |
+| COLUMN_DEFAULT           | text                       | YES  |     | NULL    |       |
+| IS_NULLABLE              | varchar(3)                 | NO   |     |         |       |
+| DATA_TYPE                | longtext                   | YES  |     | NULL    |       |
+| CHARACTER_MAXIMUM_LENGTH | bigint                     | YES  |     | NULL    |       |
+| CHARACTER_OCTET_LENGTH   | bigint                     | YES  |     | NULL    |       |
+| NUMERIC_PRECISION        | bigint unsigned            | YES  |     | NULL    |       |
+| NUMERIC_SCALE            | bigint unsigned            | YES  |     | NULL    |       |
+| DATETIME_PRECISION       | int unsigned               | YES  |     | NULL    |       |
+| CHARACTER_SET_NAME       | varchar(64)                | YES  |     | NULL    |       |
+| COLLATION_NAME           | varchar(64)                | YES  |     | NULL    |       |
+| COLUMN_TYPE              | mediumtext                 | NO   |     | NULL    |       |
+| COLUMN_KEY               | enum('','PRI','UNI','MUL') | NO   |     | NULL    |       |
+| EXTRA                    | varchar(256)               | YES  |     | NULL    |       |
+| PRIVILEGES               | varchar(154)               | YES  |     | NULL    |       |
+| COLUMN_COMMENT           | text                       | NO   |     | NULL    |       |
+| GENERATION_EXPRESSION    | longtext                   | NO   |     | NULL    |       |
+| SRS_ID                   | int unsigned               | YES  |     | NULL    |       |
++--------------------------+----------------------------+------+-----+---------+-------+
+22 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME,COLUMN_NAME,DATA_TYPE from columns where TABLE_SCHEMA='db2';
++------------+-------------+-----------+
+| TABLE_NAME | COLUMN_NAME | DATA_TYPE |
++------------+-------------+-----------+
+| a          | c1          | int       |
+| a          | c2          | int       |
+| a          | c3          | int       |
+| a1         | id          | int       |
+| a1         | ename       | varchar   |
+| b          | c1          | int       |
+| b          | c2          | varchar   |
+| b          | c3          | datetime  |
+| emp        | id          | int       |
+| emp        | ename       | varchar   |
+| emp        | sal         | float     |
+| emp        | comm        | float     |
+| emp        | city        | varchar   |
+| emp        | total       | int       |
+| emp        | password    | varbinary |
+| emp        | zone        | enum      |
+| emp        | URL         | varchar   |
+| t1         | c1          | int       |
+| t1         | c2          | int       |
+| t1         | c3          | int       |
+| t2         | c1          | int       |
+| t2         | c2          | int       |
+| t2         | c3          | int       |
+| t3         | c1          | int       |
+| t3         | c2          | int       |
+| t4         | c1          | int       |
+| t4         | c2          | int       |
+| t5         | c1          | int       |
+| t5         | c2          | int       |
+| t6         | c1          | int       |
+| t6         | c2          | int       |
+| t7         | c1          | char      |
+| t7         | c2          | int       |
+| t8         | c1          | int       |
+| t8         | c2          | int       |
++------------+-------------+-----------+
+35 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME,COLUMN_NAME,DATA_TYPE from columns where TABLE_SCHEMA='db2' and table_name='emp';
++------------+-------------+-----------+
+| TABLE_NAME | COLUMN_NAME | DATA_TYPE |
++------------+-------------+-----------+
+| emp        | id          | int       |
+| emp        | ename       | varchar   |
+| emp        | sal         | float     |
+| emp        | comm        | float     |
+| emp        | city        | varchar   |
+| emp        | total       | int       |
+| emp        | password    | varbinary |
+| emp        | zone        | enum      |
+| emp        | URL         | varchar   |
++------------+-------------+-----------+
+9 rows in set (0.00 sec)
+
+mysql> select COLUMN_NAME from columns where TABLE_SCHEMA='db2' and table_name='emp';
++-------------+
+| COLUMN_NAME |
++-------------+
+| id          |
+| ename       |
+| sal         |
+| comm        |
+| city        |
+| total       |
+| password    |
+| zone        |
+| URL         |
++-------------+
+9 rows in set (0.00 sec)
+
+mysql> desc table_constraints;
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| CONSTRAINT_CATALOG | varchar(64) | YES  |     | NULL    |       |
+| CONSTRAINT_SCHEMA  | varchar(64) | YES  |     | NULL    |       |
+| CONSTRAINT_NAME    | varchar(64) | YES  |     | NULL    |       |
+| TABLE_SCHEMA       | varchar(64) | YES  |     | NULL    |       |
+| TABLE_NAME         | varchar(64) | YES  |     | NULL    |       |
+| CONSTRAINT_TYPE    | varchar(11) | NO   |     |         |       |
+| ENFORCED           | varchar(3)  | NO   |     |         |       |
++--------------------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from table_constraints where CONSTRAINT_SCHEMA='db2';
++------------+-----------------+-----------------+
+| TABLE_NAME | CONSTRAINT_NAME | CONSTRAINT_TYPE |
++------------+-----------------+-----------------+
+| a1         | PRIMARY         | PRIMARY KEY     |
+| emp        | PRIMARY         | PRIMARY KEY     |
+| t3         | PRIMARY         | PRIMARY KEY     |
+| t4         | c1              | UNIQUE          |
+| t5         | c1              | UNIQUE          |
+| t6         | c2              | UNIQUE          |
+| t6         | PRIMARY         | PRIMARY KEY     |
+| t8         | PRIMARY         | PRIMARY KEY     |
++------------+-----------------+-----------------+
+8 rows in set (0.00 sec)
+
+mysql> use db2;
+Database changed
+mysql> desc  t4;
++-------+------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra          |
++-------+------+------+-----+---------+----------------+
+| c1    | int  | NO   | PRI | NULL    | auto_increment |
+| c2    | int  | YES  |     | NULL    |                |
++-------+------+------+-----+---------+----------------+
+2 rows in set (0.00 sec)
+
+mysql> desc  t5;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | YES  |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> desc  t6;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | UNI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> ALTER TABLE TABLE_NAME
+	
+		ADD NEW COLUMN after col_name /  first, 
+		MODIFY COLUMN DETAILS [DATATYPE OR SIZE]
+		CHANGE OLD_CNM NEW_CNM DATATYPE(SIZE)
+		DROP COLUMN COL_NAME
+		
+		
+		
+---------------------------------------------------
+
+
+mysql> use db2;
+Database changed
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> show tables;
++---------------+
+| Tables_in_db2 |
++---------------+
+| a             |
+| a1            |
+| b             |
+| emp           |
+| t1            |
+| t2            |
+| t3            |
+| t4            |
+| t5            |
+| t6            |
+| t7            |
+| t8            |
++---------------+
+12 rows in set (0.00 sec)
+
+mysql> DESC A1;
++-------+------------+------+-----+---------+-------+
+| Field | Type       | Null | Key | Default | Extra |
++-------+------------+------+-----+---------+-------+
+| id    | int        | NO   | PRI | NULL    |       |
+| ename | varchar(6) | YES  |     | NULL    |       |
++-------+------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM A1;
++----+--------+
+| id | ename  |
++----+--------+
+|  1 | saleel |
++----+--------+
+1 row in set (0.00 sec)
+
+mysql> ALTER TABLE A1 CHANGE ENAME FIRSTNAME VARCHAR(10);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC A1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| id        | int         | NO   | PRI | NULL    |       |
+| FIRSTNAME | varchar(10) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> ALTER TBALE A1 DROP COLUMN FIRSTNAME;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TBALE A1 DROP COLUMN FIRSTNAME' at line 1
+mysql> ALTER TABLE A1 DROP COLUMN FIRSTNAME;
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC A1;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| id    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+1 row in set (0.00 sec)
+
+mysql> ALTER TABLE A1 ADD COLUMN ENAME VARCHAR(10);
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC A1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> ALTER TABLE A1 ADD COLUMN c4 int;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE A1 ADD COLUMN c3 int;
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> ALTER TABLE A1 ADD COLUMN c2 int after ename;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c2    | int         | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> ALTER TABLE A1 ADD COLUMN c0 int first;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| c0    | int         | YES  |     | NULL    |       |
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c2    | int         | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> deac a1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'deac a1' at line 1
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| c0    | int         | YES  |     | NULL    |       |
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c2    | int         | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table a1 add c5 int, c6 int;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c6 int' at line 1
+mysql> alter table a1 add c5 int, add c6 int;
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| c0    | int         | YES  |     | NULL    |       |
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c2    | int         | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
+| c5    | int         | YES  |     | NULL    |       |
+| c6    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> alter table a1 add (c7 int, c8 int);
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| c0    | int         | YES  |     | NULL    |       |
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c2    | int         | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
+| c5    | int         | YES  |     | NULL    |       |
+| c6    | int         | YES  |     | NULL    |       |
+| c7    | int         | YES  |     | NULL    |       |
+| c8    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
+mysql> alter table a1 drop c8;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| c0    | int         | YES  |     | NULL    |       |
+| id    | int         | NO   | PRI | NULL    |       |
+| ENAME | varchar(10) | YES  |     | NULL    |       |
+| c2    | int         | YES  |     | NULL    |       |
+| c4    | int         | YES  |     | NULL    |       |
+| c3    | int         | YES  |     | NULL    |       |
+| c5    | int         | YES  |     | NULL    |       |
+| c6    | int         | YES  |     | NULL    |       |
+| c7    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> alter table a1 drop (c5, c6, c7);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(c5, c6, c7)' at line 1
+mysql> alter table a1 drop c5, drop c6, drop c7, add loginname varchar(10);
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| c0        | int         | YES  |     | NULL    |       |
+| id        | int         | NO   | PRI | NULL    |       |
+| ENAME     | varchar(10) | YES  |     | NULL    |       |
+| c2        | int         | YES  |     | NULL    |       |
+| c4        | int         | YES  |     | NULL    |       |
+| c3        | int         | YES  |     | NULL    |       |
+| loginname | varchar(10) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> desc a1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| c0        | int         | YES  |     | NULL    |       |
+| id        | int         | NO   | PRI | NULL    |       |
+| ENAME     | varchar(10) | YES  |     | NULL    |       |
+| c2        | int         | YES  |     | NULL    |       |
+| c4        | int         | YES  |     | NULL    |       |
+| c3        | int         | YES  |     | NULL    |       |
+| loginname | varchar(10) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> alter table a1 drop id, add _ID int, change ename firstName varchar(10), modify loginname char(40);
+Query OK, 1 row affected (0.11 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| c0        | int         | YES  |     | NULL    |       |
+| firstName | varchar(10) | YES  |     | NULL    |       |
+| c2        | int         | YES  |     | NULL    |       |
+| c4        | int         | YES  |     | NULL    |       |
+| c3        | int         | YES  |     | NULL    |       |
+| loginname | char(40)    | YES  |     | NULL    |       |
+| _ID       | int         | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> alter table a1 modify _ID int first;
+Query OK, 0 rows affected (0.23 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| _ID       | int         | YES  |     | NULL    |       |
+| c0        | int         | YES  |     | NULL    |       |
+| firstName | varchar(10) | YES  |     | NULL    |       |
+| c2        | int         | YES  |     | NULL    |       |
+| c4        | int         | YES  |     | NULL    |       |
+| c3        | int         | YES  |     | NULL    |       |
+| loginname | char(40)    | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> create table a2(id int, phone int, emailid varchar(10));
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> alter table a2 add constraint pk_id primary key(id);
+Query OK, 0 rows affected (0.13 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a2;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | int         | NO   | PRI | NULL    |       |
+| phone   | int         | YES  |     | NULL    |       |
+| emailid | varchar(10) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table a2 add unique key(phone);
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table a2 add constraint uni_emailID unique key(emailid);
+Query OK, 0 rows affected (0.05 sec)                                                                           Records: 0  Duplicates: 0  Warnings: 0                                                                                                                                                                                        mysql> desc a2;                                                                                                +---------+-------------+------+-----+---------+-------+                                                       | Field   | Type        | Null | Key | Default | Extra |                                                       +---------+-------------+------+-----+---------+-------+                                                       | id      | int         | NO   | PRI | NULL    |       |                                                       | phone   | int         | YES  | UNI | NULL    |       |                                                       | emailid | varchar(10) | YES  | UNI | NULL    |       |                                                       +---------+-------------+------+-----+---------+-------+                                                       3 rows in set (0.00 sec)                                                                                                                                                                                                      mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from table_constraints where CONSTRAINT_SCHEMA='db2';
+ERROR 1146 (42S02): Table 'db2.table_constraints' doesn't exist
+mysql>
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from information_schema.table_constraints where CONSTRAINT_SCHEMA='db2';
++------------+-----------------+-----------------+
+| TABLE_NAME | CONSTRAINT_NAME | CONSTRAINT_TYPE |
++------------+-----------------+-----------------+
+| a2         | phone           | UNIQUE          |
+| a2         | PRIMARY         | PRIMARY KEY     |
+| a2         | uni_emailID     | UNIQUE          |
+| emp        | PRIMARY         | PRIMARY KEY     |
+| t3         | PRIMARY         | PRIMARY KEY     |
+| t4         | c1              | UNIQUE          |
+| t5         | c1              | UNIQUE          |
+| t6         | c2              | UNIQUE          |
+| t6         | PRIMARY         | PRIMARY KEY     |
+| t8         | PRIMARY         | PRIMARY KEY     |
++------------+-----------------+-----------------+
+10 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from information_schema.table_constraints where CONSTRAINT_SCHEMA='db2' and table_name='a2';
++------------+-----------------+-----------------+
+| TABLE_NAME | CONSTRAINT_NAME | CONSTRAINT_TYPE |
++------------+-----------------+-----------------+
+| a2         | phone           | UNIQUE          |
+| a2         | PRIMARY         | PRIMARY KEY     |
+| a2         | uni_emailID     | UNIQUE          |
++------------+-----------------+-----------------+
+3 rows in set (0.00 sec)
+
+mysql> desc a2;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | int         | NO   | PRI | NULL    |       |
+| phone   | int         | YES  | UNI | NULL    |       |
+| emailid | varchar(10) | YES  | UNI | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table a2 drop index  phone;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a2;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | int         | NO   | PRI | NULL    |       |
+| phone   | int         | YES  |     | NULL    |       |
+| emailid | varchar(10) | YES  | UNI | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table a2 drop index  emailid;
+ERROR 1091 (42000): Can't DROP 'emailid'; check that column/key exists
+mysql>
+mysql>
+mysql> alter table a2 drop index uni_emailID;
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a1;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| _ID       | int         | YES  |     | NULL    |       |
+| c0        | int         | YES  |     | NULL    |       |
+| firstName | varchar(10) | YES  |     | NULL    |       |
+| c2        | int         | YES  |     | NULL    |       |
+| c4        | int         | YES  |     | NULL    |       |
+| c3        | int         | YES  |     | NULL    |       |
+| loginname | char(40)    | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> desc a2;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | int         | NO   | PRI | NULL    |       |
+| phone   | int         | YES  |     | NULL    |       |
+| emailid | varchar(10) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table a2 add constraint abc unique key(phone);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table a2 add constraint abc unique key(emailid);
+ERROR 1061 (42000): Duplicate key name 'abc'
+mysql> create table a3 (emailid varchar(10));
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> alter table a3 add constraint abc unique key(emailid);
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql>
+mysql>
+mysql> create table a4 (c1 int, c2 int);
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> alter table a4 add constraint pk_c1_c2 primary key(c1,c2);
+Query OK, 0 rows affected (0.20 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a4;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from information_schema.table_constraints where CONSTRAINT_SCHEMA='db2' and table_name='a4';
++------------+-----------------+-----------------+
+| TABLE_NAME | CONSTRAINT_NAME | CONSTRAINT_TYPE |
++------------+-----------------+-----------------+
+| a4         | PRIMARY         | PRIMARY KEY     |
++------------+-----------------+-----------------+
+1 row in set (0.00 sec)
+
+mysql> desc a4;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table a4 drop primary key;
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a4;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   |     | NULL    |       |
+| c2    | int  | NO   |     | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from information_schema.table_constraints where CONSTRAINT_SCHEMA='db2' and table_name='a4';
+Empty set (0.00 sec)
+
+mysql> alter table a4 add constraint pk_c1_c2 primary key(c1,c2);
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc a4;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
+| c2    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> alter table a4 drop c2;
+Query OK, 0 rows affected (0.13 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from information_schema.table_constraints where CONSTRAINT_SCHEMA='db2' and table_name='a4';
++------------+-----------------+-----------------+
+| TABLE_NAME | CONSTRAINT_NAME | CONSTRAINT_TYPE |
++------------+-----------------+-----------------+
+| a4         | PRIMARY         | PRIMARY KEY     |
++------------+-----------------+-----------------+
+1 row in set (0.00 sec)
+
+mysql> desc a4;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| c1    | int  | NO   | PRI | NULL    |       |
++-------+------+------+-----+---------+-------+
+1 row in set (0.00 sec)
+
+mysql> show tables;
++---------------+
+| Tables_in_db2 |
++---------------+
+| a             |
+| a1            |
+| a2            |
+| a3            |
+| a4            |
+| b             |
+| emp           |
+| t1            |
+| t2            |
+| t3            |
+| t4            |
+| t5            |
+| t6            |
+| t7            |
+| t8            |
++---------------+
+15 rows in set (0.00 sec)
+
+mysql> drop database db2;
+Query OK, 15 rows affected (1.03 sec)
+
+mysql> create database db2;
+Query OK, 1 row affected (0.10 sec)
+
+mysql> use db2;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> create table t1(id int, ename varchar(10), sal int check( sal> 5000));
+Query OK, 0 rows affected (0.49 sec)
+
+mysql> desc t1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | YES  |     | NULL    |       |
+| ename | varchar(10) | YES  |     | NULL    |       |
+| sal   | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into t1 values(1,'a', 1000);
+ERROR 3819 (HY000): Check constraint 't1_chk_1' is violated.
+mysql> select TABLE_NAME, CONSTRAINT_NAME,  CONSTRAINT_TYPE from information_schema.table_constraints where CONSTRAINT_SCHEMA='db2';
++------------+-----------------+-----------------+
+| TABLE_NAME | CONSTRAINT_NAME | CONSTRAINT_TYPE |
++------------+-----------------+-----------------+
+| t1         | t1_chk_1        | CHECK           |
++------------+-----------------+-----------------+
+1 row in set (0.00 sec)
+
+mysql> insert into t1 values(1,'a', 6000);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select * from t1;
++------+-------+------+
+| id   | ename | sal  |
++------+-------+------+
+|    1 | a     | 6000 |
++------+-------+------+
+1 row in set (0.00 sec)
+
+mysql> create table t2(c1 int, c2 int, c3 int check ((c1+c2) > 50000));
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql> create table t2(c1 int, c2 int, c3 int check (c1+c2 > 5000));
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql> create table t2(c3 int check ((c1+c2) > 5000), c1 int , c2 int);
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql> create table t2(c1 int, c2 int, c3 int);
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> drop table t2;
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> create table t2(c1 int , c2 int, c3 int check(c3 > (c1+c2));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> create table t2(c1 int , c2 int, c3 int check(c3 > c1+c2);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql>
+mysql> create table t2(c1 int, c2 int, c3 int check(c3 > 5000);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> create table t2(c1 int , c2 int, c3 int check(c3 > c1+c2));
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> create table t2(c1 int , c2 int, c3 int check(c3 > (c1+c2)));
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql>
+mysql>
+mysql>
+mysql> drop table t2;
+ERROR 1051 (42S02): Unknown table 'db2.t2'
+mysql>
+mysql> drop table t1;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create table t2(c1 int , c2 int, c3 int check(c3 > (c1+c2) ) );
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> create table t2(c1 int , c2 int, c3 int check((c1+c2) > 5000 ) );
+ERROR 3813 (HY000): Column check constraint 't2_chk_1' references other column.
+mysql>
+mysql> create table t2(c1 int , c2 int, c3 int,  check(c3 > (c1+c2) ) );
+Query OK, 0 rows affected (0.10 sec)
+
+mysql>
+
+		
+
+
